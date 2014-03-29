@@ -1,0 +1,733 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url("../images/Setup_screen.jpg") fixed;
+	background-size: cover;
+}
+
+@font-face {
+	font-family: gotham;
+	src: url(../fonts/GothamLight.ttf);
+}
+
+@font-face {
+	font-family: open-sans;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+.container {
+	width: 100% !important;
+	padding: 0px;
+	margin-top: 3em;
+}
+
+.swiper-scrollbar {
+	display: none !important;
+}
+
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	margin: 2em 0;
+}
+
+.home-page {
+	width: 100% !important;
+	padding: 0px;
+	margin-bottom: 3em;
+	padding-top: 2em;
+	text-align: center;
+}
+
+.select-option {
+	text-align: center;
+}
+
+.select-option p {
+	font-size: 16px;
+	color: #ec1e36;
+	font-family: gotham;
+}
+
+.col-lg-4 {
+	text-align: center;
+}
+
+.row-one {
+	float: left;
+	margin-bottom: 4em;
+}
+
+.row-one p {
+	font-family: open-sans;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 1em;
+}
+
+.row-two {
+	float: left;
+	margin-bottom: 4em;
+}
+
+.row-two p {
+	font-family: open-sans;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 1em;
+}
+
+.row-three {
+	float: left;
+	margin-bottom: 4em;
+}
+
+.row-three p {
+	font-family: open-sans;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 1em;
+}
+
+.row-four {
+	float: left;
+	margin-bottom: 4em;
+}
+
+.row-four p {
+	font-family: open-sans;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 1em;
+}
+
+.skip {
+	background: #ec1e36;
+	height: 40px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.skip > a {
+	line-height: 20px;
+	font-family: open-sans;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 1em;
+	text-decoration: none;
+}
+
+.skip p {
+	line-height: 2.5em;
+}
+
+.circle-swipe {
+	text-align: center;
+}
+
+.swipe-gallery {
+	margin: 2em 0em;
+}
+
+.previous {
+	float: left;
+	text-align: right;
+}
+
+.previous img {
+	margin: 70px 0 0 0;
+}
+
+.next {
+	float: left;
+	text-align: left;
+}
+
+.next img {
+	margin: 70px 0 0 0;
+}
+
+.shake img {
+	-webkit-animation: bobble 2s infinite;
+}
+ @-webkit-keyframes bobble {
+	0% {
+	 -webkit-transform:rotate(-15deg);
+	}
+	50% {
+	 -webkit-transform:rotate(15deg);
+	}
+	100% {
+	 -webkit-transform:rotate(-15deg);
+	}
+}
+
+/*========================== PLaylist Page ==========================*/
+
+#showLeft {
+	border: 0px;
+	background: none;
+	z-index: 99999999;
+	float: left;
+}
+
+.demo-page {
+	margin-top: 0px;
+}
+
+.highlights {
+	width: 100%;
+	height: 108px;
+	background: #343333;
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+}
+
+.highlights {
+	-webkit-box-shadow: 0 10px 14px -1px #000;
+	-moz-box-shadow: 0 10px 14px -1px #000;
+	box-shadow: 0 10px 14px -1px #000;
+}
+
+.heading {
+	padding: 1.2em 0;
+}
+
+.heading h1 {
+	font-size: 36px;
+	font-family: gotham;
+	color: #ec1e36;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.search {
+	float: right;
+}
+
+.playlist {
+	width: 100%;
+	float: left;
+	margin-top: 5em;
+	padding: 0px;
+	clear: both;
+}
+
+.playlist ul li {
+	width: 100%;
+	float: left;
+	list-style: none;
+	position: relative;
+	margin-bottom: 0.5em;
+}
+
+.playlist ul li a {
+	text-decoration: none;
+}
+
+.playlist ul li img {
+	width: 100%;
+}
+
+.discription {
+	width: 100%;
+	float: left;
+	background: rgba(0,0,0,.64);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 0.5em 0.5em 0.2em 0.5em;
+}
+
+.title {
+	padding: 0.1em 0 0 4em;
+}
+
+.title p {
+	font-size: 20px;
+	color: #fff;
+	font-family: gotham;
+}
+
+.title p span {
+	font-size: 14px;
+	color: #797579;
+	font-family: gotham;
+}
+
+.time {
+	float: left;
+	text-align: center;
+	padding: 0.25em 0 0 0;
+}
+
+.time p {
+	font-size: 20px;
+	color: #fff;
+	font-family: gotham;
+	text-align: right;
+	position: relative;
+	right: 4.5em;
+	margin-bottom: 0px;
+}
+
+.time span {
+	font-size: 16px;
+	color: #797579;
+	font-family: gotham;
+}
+
+.swipe {
+	position: fixed;
+	right: 0px;
+	top: 40%;
+	text-align: right;
+	padding: 0px;
+}
+
+.swipebars {
+	padding: 0px;
+}
+
+/****************** Slide menu custom ********************/
+
+
+
+.cbp-spmenu p {
+	text-align: center;
+	cursor: pointer;
+	background: none;
+	border: 0px;
+	margin-top: 3.4em;
+}
+
+/*========================== Wedeo-Player Page ==========================*/
+
+
+
+.demo {
+	margin: 0em !important;
+}
+
+.wedeoplayer-wrap {
+	width: 100%;
+	float: left;
+	margin-top: 5em;
+	padding: 0px;
+}
+
+.wedeoplayer {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.wedeoplayer > img {
+	width: 100%;
+}
+
+.playercontrols {
+	width: 100%;
+	float: left;
+	background: rgba(0,0,0,.64);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 1em;
+	text-align: center;
+	margin: 0px;
+}
+
+.timebar {
+	float: left;
+	margin: 0px;
+	padding: 7px 0 0 0;
+}
+
+.timebar img {
+	width: 100%;
+}
+
+.wedeodetail {
+	width: 100%;
+	padding: 0px;
+	margin: 0.5em 0em;
+	float: left;
+}
+
+.wedeodetail h1 {
+	font-family: gotham;
+	font-size: 28px;
+	color: #fff;
+}
+
+.wedeodetail span {
+	font-family: gotham;
+	font-size: 18px;
+	float: left;
+	color: #615f5f;
+	text-align: left;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-top: 0.5em;
+	width: 100%;
+}
+
+.wedeodetail p {
+	font-family: gotham;
+	color: #615f5f;
+	font-size: 16px;
+	float: left;
+	margin-top: 1em;
+	line-height: 1.7em;
+}
+
+.highlighted-wedeo {
+	width: 100%;
+	float: left;
+	background: rgb(30,30,30);
+	padding: 1.5em;
+}
+
+.highlighted-wedeo h2 {
+	font-size: 24px;
+	font-family: gotham;
+	color: #ec1e36;
+}
+
+.features img {
+	max-width: 15%;
+	height: auto;
+}
+
+/*========================== Sliding panel Page ==========================*/
+
+.nav li {
+	font-family: gotham;
+	font-size: 12px;
+	color: #fff !important;
+	margin-bottom: 10px;
+}
+
+.title1 {
+	text-align: center;
+	width: 100%;
+	color: #fff !important
+}
+
+.title1 img {
+	width: 64px;
+}
+
+.no-padding {
+	padding: 0px !important;
+}
+
+.swiper-slide {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.one {
+	height: auto !important;
+}
+
+.swiper1 .swiper-wrapper {
+	height: auto !important;
+}
+
+.overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(0,0,0,0.85);
+	display: none;
+}
+
+/*========================== Watchlist Page ==========================*/
+
+.watchList ul {
+	float: left;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 15px;
+}
+
+.watchList ul li {
+	float: left;
+	width: 50%;
+	list-style: none;
+	display: inline;
+	padding: 2% 2% 2% 2%;
+	position: relative;
+}
+
+.watchList ul li img {
+	max-width: 100%;
+	height: auto;
+}
+
+.margin {
+	margin: 90px 0 0 0 !important;
+}
+
+.watchListBand {
+	background: rgba(8,7,9,0.85);
+	position: absolute;
+	bottom: 0px;
+	height: 40px;
+	left: 4%;
+	right: 4%;
+	bottom: 3%;
+	padding: 2% 0 5% 0;
+}
+
+.watchlistTitle {
+	padding: 0px;
+	float: left;
+	padding: 3% 0 0 5%;
+}
+
+.closebtn {
+	padding: 0px;
+	float: right;
+}
+
+.closebtn img {
+	max-width: 60% !important;
+	height: auto;
+}
+
+.watchlistTitle p {
+	color: #fff;
+	font-size: 10px;
+	font-family: gotham;
+	margin: 0px;
+	float: left;
+	padding-bottom: 5%;
+}
+/*===========================================
+			Media Queries
+============================================*/
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+/*============== index page =======================*/
+
+
+.row {
+	margin: 1em 0;
+}
+
+.bottomBar {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	background: #343333;
+	height: 54px;
+	padding-top: 7px;
+}
+
+.row-one img, .row-two img, .row-three img, .row-four img {
+	width: 50px;
+}
+
+.col-lg-4 {
+	width: 33.33333333333333%;
+}
+
+.circle-swipe {
+	width: 100% !important;
+	text-align: center;
+}
+
+.col-lg-2 {
+	width: 18.666666666666664%;
+}
+
+.col-lg-8 {
+	width: 66.66666666666666%;
+}
+
+.col-lg-3 {
+	width: 34%;
+}
+
+.skip {
+	margin: 0 auto;
+	float: none;
+}
+
+.container {
+	margin-top: 0em;
+}
+
+.select-option {
+	padding: 1em 0 0 0;
+	width: 100% !important;
+}
+
+.home-page {
+	margin-bottom: 0em;
+	padding-top: 0em;
+	margin: 0px;
+}
+
+.row-one, .row-two, .row-three, .row-four {
+	margin-bottom: 0em;
+	padding: 0px;
+}
+
+/*=============== playlist page ======================*/
+
+
+#showLeft img {
+	width: 30px;
+}
+
+.heading h1 {
+	font-size: 24px;
+}
+
+.search img {
+	width: 20px;
+}
+
+.highlights {
+	height: 70px;
+}
+
+.heading {
+	padding: 0px;
+}
+
+.swipebars img {
+	width: 30px;
+}
+
+.title {
+	padding: 5px;
+	width: 70%;
+	float: left;
+}
+
+.playlist {
+	margin-top: 3.5em;
+}
+
+.title p {
+	font-size: 13px;
+	margin: 0px;
+}
+
+.title p span {
+	font-size: 12px;
+}
+
+.time {
+	width: 30%;
+	right: 0.5em;
+	text-align: right;
+}
+
+.time p {
+	right: 0px;
+	font-size: 13px;
+}
+
+.time span {
+	font-size: 12px;
+}
+
+.wedeoplayer-wrap {
+	margin-top: 4.5em;
+}
+
+/*=================== Player page ======================*/
+
+
+.playercontrols {
+	padding: 3px 0;
+}
+
+.playercontrols > .time {
+	width: 10% !important;
+	float: right;
+}
+
+.playercontrols > .time > p {
+	margin-top: 0.2em;
+	font-size: 14px;
+}
+
+.playpause {
+	padding: 0px;
+	float: left;
+	width: 10%;
+}
+
+.playpause img {
+	width: 20px;
+}
+
+.timebar {
+	width: 75%;
+	float: left;
+	padding: 3px 0 0 4px;
+}
+
+.wedeodetail h1 {
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.wedeodetail span {
+	font-size: 14px;
+}
+
+.wedeodetail p {
+	font-size: 12px;
+}
+}
+@media (min-width:430px) and (max-width:480px) {
+
+.watchListBand {
+	background: rgba(8,7,9,0.85);
+	position: absolute;
+	bottom: 0px;
+	height: 40px;
+	left: 4%;
+	right: 4%;
+	bottom: 3%;
+	padding: 2% 0 5% 0;
+}
+
+.watchlistTitle {
+	padding: 0px;
+	float: left;
+	padding: 1% 0 0 5%;
+}
+
+.closebtn img {
+	max-width: 50% !important;
+}
+}
+
+.title1 a {
+	padding: 0 !important;
+	text-decoration: none !important;
+	color: #ffffff !important;
+	font-size: 13px !important;
+	font-weight: bold !important;
+}
