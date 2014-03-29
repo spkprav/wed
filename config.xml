@@ -17,6 +17,8 @@
 	<feature name="NetworkStatus">
     	<param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
 	</feature>
+	
+	<plugin name="YouTube" value="com.remcob00.plugins.youtube.YouTube"/>
 
 	<preference name="phonegap-version" value="3.1.0" />
     <preference name="permissions" value="none" />
