@@ -7,6 +7,8 @@
 <title>Wedeo</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/slideleft.css">
+
 </head>
 
 <body>
@@ -61,5 +63,31 @@
 <script type="text/javascript" src="js/jquery-1.11.0.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="js/slideleft.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	
+	var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),				
+	showLeft = document.getElementById( 'showLeft' ),				
+	body = document.body;
+	
+	showLeft.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		$(body).css({'overflow':'hidden'});
+		$('.overlay').show();
+	};
+	
+	$('html').click(function(e) {
+		if(!$(e.target).hasClass('showMenu')){
+			if($('#cbp-spmenu-s1').hasClass('cbp-spmenu-open')){
+				$(body).css({'overflow':''});	
+				$('.overlay').hide();				
+				$('#cbp-spmenu-s1').removeClass('cbp-spmenu-open').addClass('cbp-spmenu-close');
+			}
+		}
+	});
+});
+</script>
 </body>
 </html>
