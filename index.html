@@ -74,20 +74,12 @@ $(document).ready(function(e) {
 	showLeft = document.getElementById( 'showLeft' ),				
 	body = document.body;
 	
-	window.addEventListener("orientationchange", orientationChange, false);
-	
-	function shouldRotateToOrientation(rotation){
-		switch (rotation) {
-			case 0:     
-				return false;
-			case 90:
-				return false;
-			case -90:
-				return false;
-			case 180:
-				return false;
-		}
+	function reorient(e) {
+		var portrait = (window.orientation % 180 == 0);
+		$("body").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
 	}
+	window.onorientationchange = reorient;
+	window.setTimeout(reorient, 0);
 	
 	showLeft.onclick = function() {
 		classie.toggle( this, 'active' );
