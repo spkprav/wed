@@ -27,13 +27,7 @@
 			<!--<iframe id="ytplayer" type="text/html" style="width:100%;height:200px;" src="https://www.youtube.com/embed/M7lc1UVf-VE" frameborder="0" allowfullscreen>-->
 			<br />
 			<br /><br /><br /><br /><br />
-			<input type="button" onclick="navigator.screenOrientation.set('landscape');return false;" value="Landscape" />
-			<input type="button" onclick="navigator.screenOrientation.set('portrait');return false;" value="Portrait" />
-			<input type="button" onclick="navigator.screenOrientation.set('sensorLandscape');return false;" value="Sensor Landscape" />
-			<input type="button" onclick="navigator.screenOrientation.set('sensorPortrait');return false;" value="Sensor Portrait" />
-			<input type="button" onclick="navigator.screenOrientation.set('reverseLandscape');return false;" value="Reverse Landscape" />
-			<input type="button" onclick="navigator.screenOrientation.set('reversePortrait');return false;" value="Reverse Portrait" />
-			<input type="button" onclick="navigator.screenOrientation.set('fullSensor');return false;" value="Full Sensor" />
+			
 		</div>
 		<div class="col-lg-12 swipe">
 		  <div class="col-lg-offset-11 col-lg-1 swipebars"> <img src="images/swipebars.png" alt=""> </div>
@@ -79,6 +73,21 @@ $(document).ready(function(e) {
 	var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),				
 	showLeft = document.getElementById( 'showLeft' ),				
 	body = document.body;
+	
+	window.addEventListener("orientationchange", orientationChange, false);
+	
+	function shouldRotateToOrientation(rotation){
+		switch (rotation) {
+			case 0:     
+				return false;
+			case 90:
+				return false;
+			case -90:
+				return false;
+			case 180:
+				return false;
+		}
+	}
 	
 	showLeft.onclick = function() {
 		classie.toggle( this, 'active' );
